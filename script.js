@@ -1,4 +1,3 @@
-
 const humburgerMenuInput = document.querySelector(".humburger-menu input");
 const nav = document.querySelector(".navigation-link");
 const link = document.querySelectorAll(".navigation-link li");
