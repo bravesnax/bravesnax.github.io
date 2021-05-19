@@ -15,13 +15,14 @@
 <nav id="nav-bar">
     <a href="#header" id="logo">
         <img src="img/logo.png" alt="logo" id="logo-img">
+        <p id="logo-text">brave <span>snax</span></p>
     </a>
 
     <ul class="navigation-link">
         <li><a href="#header" class="nav-link">Home</a></li>
         <li><a href="#funfact" class="nav-link">Fun Facts</a></li>
-        <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
-        <li><a href="#order-menu" class="nav-link">Order Now</a></li>
+        <li><a href="#testimoni" class="nav-link">Testimonial</a></li>
+        <li><a href="#order-menu" id="button-link">Order Now</a></li>
     </ul>
 
     <div class="humburger-menu">
@@ -36,26 +37,23 @@
 <header id="header">
     <div id="title-header">
         <h1 id="title">brave <span>snax</span></h1>
-        <h2 id="sub-title">home made banana sticks</h2>
-        <a href="#order-menu" id="header-link">Order Now</a>
+        <h2 id="tagline">home made banana sticks</h2>
+        <a href="#order-menu" id="button-link">Order Now</a>
     </div>
-
-    <div id="hero-img">
-        <img src="img/header-img.jpg" alt="header image" id="header-img">
-    </div>
+    <img src="img/header-img.jpg" alt="header image" id="header-img">
 </header>
 
 <!-- main -->
 <main id="main">
     <section id="funfact">
-        <h2 class="sec-title">fun facts</h2>
+        <h2 id="sub-title">fun facts</h2>
         <div class="content">
             <img src="img/banana-img.jpg" alt="banana image" id="banana-img">
             <p>Banana Crispy Sticks cemilan sehat yang diolah tanpa bahan pengawet. Diolah dari pisang goroho yang masih tergolong organik. Sangat cocok dikonsumsi oleh berbagai kalangan mulai dari anak-anak, ramaja sampai dengan orang dewasa.</p>
         </div>
     </section>
     <section id="testimoni">
-        <h2 class="sec-title">testimoni</h2>
+        <h2 id="sub-title">testimonial</h2>
         <div id="video-box">
             <video id="video" controls>
                 <source src="video/video2.mp4" type="video/mp4">
@@ -63,7 +61,7 @@
         </div>
     </section>
     <section id="order-menu">
-        <h2 class="sec-title">varian rasa</h2>
+        <h2 id="sub-title">varian rasa</h2>
         <div class="variants">
             <div class="card">
                 <div class="variant-img"></div>
@@ -80,26 +78,37 @@
         </div>
 
         <form action="" id="form">
-            <h2 class="sec-title">transaksi melalui</h2>
-            <ul id="medsos">
-                <li><a href="https://api.whatsapp.com/send?phone=+6281341393529" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="https://www.instagram.com/brave_snax/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <h2 id="sub-title">transaksi melalui</h2>
+            <ul id="medsos-link">
+                <li id="icon-link"><a href="https://api.whatsapp.com/send?phone=+6281341393529" target="_blank" id="icon-link"><i class="fab fa-whatsapp"></i></a></li>
+                <li id="icon-link"><a href="https://www.instagram.com/brave_snax/" target="_blank" id="icon-link"><i class="fab fa-instagram"></i></a></li>
+                <li id="icon-link"><a href="https://web.facebook.com/bravesnax2021" target="_blank" id="icon-link"><i class="fab fa-facebook"></i></a></li>
             </ul>
 
             <div class="line">
                 <span></span><h3>atau</h3><span></span>
             </div>
 
-            <div class="email-form">
-                <input type="email" name="email" id="email" placeholder="masukan email anda">
-                <input type="submit" value="ORDER" id="submit">
+            <div id="box-form">
+                <label for="nama" id="label">Nama</label>
+                <input type="text" name="nama" id="nama" placeholder="masukan nama anda" required>
+                <label for="email" id="label">Email</label>
+                <input type="email" name="email" id="email" placeholder="masukan email anda" required>
+                <button type="submit" id="button-submit">order</button>
             </div>
         </form>
     </section>
 </main>
 
 <!-- footer -->
-<footer id="footer"></footer>
+<footer id="footer">
+    <ul>
+        <h3>follow us</h3>
+        <li><a href="https://www.instagram.com/brave_snax/" target="_blank"><i class="fab fa-instagram"></i> instagram/brave_snax</a></li>
+        <li><a href="https://web.facebook.com/bravesnax2021" target="_blank"><i class="fab fa-facebook"></i> facebook/bravesnax2021</a></li>
+    </ul>
+    <i class="far fa-copyright"> 2021 Bravesnax</i>
+</footer>
 
 
 <!-- script -->
